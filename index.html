@@ -439,8 +439,8 @@
         <a href="#projects">Projects</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
-        <!-- FIXED: Resume is inside documents folder -->
-        <a href="documents/Resume.pdf" download>Resume</a>
+        <!-- Nav Resume Link -->
+        <a href="documents/Resume.pdf" download="Rovick_Garcia_Resume.pdf">Resume</a>
       </div>
     </div>
   </nav>
@@ -452,8 +452,10 @@
     <p>I'm Rovick C. Garcia, a student developer who knows how to build web applications from the ground up. I enjoy solving problems, learning new technologies, and creating products that make a real difference.</p>
     <div class="btn-row">
       <a href="#projects" class="btn btn-primary">View Projects</a>
-      <!-- FIXED: Resume is inside documents folder -->
-      <a href="documents/Resume.pdf" download class="btn btn-ghost">⬇ Download Resume</a>
+      
+      <!-- CHANGED: Now scrolls down to the Contact section -->
+      <a href="#contact" class="btn btn-ghost" style="background: var(--surface);">👁️ View Resume</a>
+      
     </div>
   </section>
 
@@ -462,15 +464,14 @@
     <h2>About Me</h2>
     <p class="subtitle">A short introduction about who I am and what I do.</p>
     <div class="about-wrap">
-      <!-- FIXED: Profile pic is inside assets folder -->
       <img class="avatar" src="assets/profile.jpg" alt="Rovick C. Garcia">
       <div>
-        <p>I'm Rovick C. Garcia, a passionate aspiring Web Developer who enjoys building web applications, solving problems, and exploring new technologies. I turn ideas into functional digital solutions while continuously learning and growing as a developer. Beyond coding, I'm also a competitive online gamer who enjoys participating in gaming tournaments, developing strategic skills, and challenging myself to improve both individually and as part of a team..</p>
+        <p>I'm Rovick C. Garcia, a passionate developer with experience in building web applications from the ground up. I enjoy solving problems, learning new technologies, and creating products that make a real difference.</p>
         <div class="skills">
           <span class="skill">JavaScript</span>
           <span class="skill">HTML/CSS</span>
-          <span class="skill">C#</span>
-          <span class="skill">Editing</span>
+          <span class="skill">React</span>
+          <span class="skill">Node.js</span>
           <span class="skill">Python</span>
           <span class="skill">Figma</span>
         </div>
@@ -484,7 +485,6 @@
     <p class="subtitle">Professional certifications and credentials I've earned.</p>
     <div class="grid grid-3">
       
-      <!-- FIXED: Certificate is inside documents folder -->
       <a href="documents/Certificate.pdf" target="_blank" class="card" style="text-decoration: none; color: inherit;">
         <h3>Introduction to Cybersecurity</h3>
         <div class="meta">Cisco Networking Academy · 2025</div>
@@ -503,7 +503,6 @@
       
       <!-- Project 1 -->
       <div class="card">
-        <!-- FIXED: Image is inside assets folder -->
         <img src="assets/Technova2026.png" alt="TechNova 2026">
         <h3>TechNova 2026</h3>
         <div class="meta">HTML · CSS · JavaScript</div>
@@ -516,7 +515,6 @@
 
       <!-- Project 2 -->
       <div class="card">
-        <!-- FIXED: Image is inside assets folder -->
         <img src="assets/MonitoringSystem.png" alt="Internship Tracking">
         <h3>Internship Tracking & Monitoring System</h3>
         <div class="meta">HTML · CSS · JavaScript · PHP · API</div>
@@ -529,10 +527,9 @@
 
       <!-- Project 3 -->
       <div class="card">
-        <!-- FIXED: Image is inside assets folder -->
         <img src="assets/AimTrainer.png" alt="Aim Trainer">
         <h3>Aim Trainer</h3>
-        <div class="meta"> c# · MySQL</div>
+        <div class="meta">Visual Studio · Database</div>
         <p>A fast-paced, interactive application designed to improve mouse accuracy, reaction time, and target tracking.</p>
         <ul>
           <li>Dynamic difficulty scaling</li>
@@ -542,10 +539,9 @@
 
       <!-- Project 4 -->
       <div class="card">
-        <!-- FIXED: Image is inside assets folder -->
         <img src="assets/ProjectTracker.jpg" alt="Project Progress Tracker">
         <h3>Project Progress Tracker System</h3>
-        <div class="meta">c# · MySQL</div>
+        <div class="meta">Visual Studio Code · Database</div>
         <p>A centralized platform designed to monitor project milestones, manage team tasks, and track overall development progress.</p>
         <ul>
           <li>Task assignment and status updates</li>
@@ -565,7 +561,7 @@
       <div class="card">
         <h3>Bachelor of Information Technology</h3>
         <div class="meta">College · 2022 – 2026</div>
-        <p>Currently pursuing a degree in Information Technology, focusing on software development, networking.</p>
+        <p>Currently pursuing a degree in Information Technology, focusing on software development, networking, and database management.</p>
       </div>
 
       <div class="card">
@@ -625,8 +621,13 @@
             <a href="https://github.com/vickman05" target="_blank" rel="noopener">github.com/vickman05</a>
           </div>
         </div>
-        <!-- FIXED: Resume is inside documents folder -->
-        <a href="documents/Resume.pdf" download class="btn btn-primary" style="margin-top:10px;">⬇ Download Resume</a>
+
+        <!-- BOTTOM BUTTONS: View and Download -->
+        <div style="display: flex; gap: 12px; margin-top: 10px; flex-wrap: wrap;">
+            <a href="documents/Resume.pdf" target="_blank" class="btn btn-ghost" style="background: var(--surface);">👁️ View Resume</a>
+            <a href="documents/Resume.pdf" download="Rovick_Garcia_Resume.pdf" class="btn btn-primary">⬇ Download Resume</a>
+        </div>
+
       </div>
       
       <form id="contactForm">
